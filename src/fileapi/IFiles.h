@@ -1,3 +1,6 @@
+#ifndef IFILES_H
+#define IFILES_H
+
 #include <memory>
 #include <string>
 
@@ -19,3 +22,7 @@ public:
 protected:
     IFiles(){};
 }
+
+using IFiles_ptr = std::unique_ptr<IFiles>;
+
+#endif // IFILES_H
